@@ -48,7 +48,18 @@ public:
         if (isEmpty())
         {
             cout << "Stack is empty." << endl;
-            return;
+            return; // if the stack is empty, print a message and return
         }
+        cout << "popped value: " << top->data << endl;
+        top = top->next; // update the top pionter to the next node
+    }
+
+    void peek()
+    {
+        if (isEmpty())
+        {
+            cout << "List is empty." << endl;
+        }
+        else
     }
 };
